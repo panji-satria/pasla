@@ -1,14 +1,10 @@
-#eksekusi_model.py
+# eksekusi_model.py
+from core.model_training import train_model
+from core.tensor_operations import perform_tensor_operation
 
-import tensorflow as tf
+def execute_model(data, labels):
+    trained_model = train_model(data, labels)
 
-def eksekusi_model(model, data, perangkat='CPU'):
-    if perangkat == 'GPU':
-        with tf.device('/GPU:0'):
-            hasil = model.predict(data)
-    elif perangkat == 'TPU':
-        # Implementasi eksekusi TPU
-        pass
-    else:
-        hasil = model.predict(data)
-    return hasil
+    result = perform_tensor_operation(data)
+
+    print(f"Execution result: {result}")
