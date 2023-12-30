@@ -7,7 +7,8 @@ version: 2
 # Build configuration
 build:
   image: latest
-  formats: all
+  formats:
+    - all
   fail_on_warnings: true
   os: ubuntu-22.04
   tools:
