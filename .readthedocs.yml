@@ -4,9 +4,9 @@
 # Required
 version: 2
 
-# Set the OS, Python version and other tools you might need
+# Build configuration
 build:
- image: latest
+  image: latest
   formats: all
   fail_on_warnings: true
   os: ubuntu-22.04
@@ -19,17 +19,16 @@ build:
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
-  configuration: docs/source/conf.py  # Adjust the path if needed
-
+  configuration: docs/conf.py
   # You can configure Sphinx to use a different builder, for instance use the dirhtml builder for simpler URLs
   # builder: "dirhtml"
   # Fail on all warnings to avoid broken references
   # fail_on_warning: true
 
 # Optionally build your docs in additional formats such as PDF and ePub
-formats:
-  - pdf
-  - epub
+# formats:
+#   - pdf
+#   - epub
 
 # Optional but recommended, declare the Python requirements required
 # to build your documentation
@@ -37,4 +36,8 @@ formats:
 python:
   version: 3.8
   install:
-    - requirements: docs/requirements.txt 
+    - requirements: docs/requirements.txt  # Adjust the path if needed
+
+# Sphinx configuration
+sphinx:
+  configuration: docs/source/conf.py  # Adjust the path if needed
