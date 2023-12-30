@@ -4,13 +4,13 @@ build:
   os: ubuntu-22.04
   tools:
 <<<<<<< HEAD
-    python: "3.8"  # Replace with a valid Python version
+    python: "3.12"  # Replace with a valid Python version
     # You can also specify other tool versions:
     # nodejs: "20"
     # rust: "1.70"
     # golang: "1.20"
 =======
-    python: "3.7.1"
+    python: "3.8"
 >>>>>>> 2f795dc71feda21108570c73e47d9f6b762e22a4
 
 sphinx:
@@ -22,6 +22,6 @@ sphinx:
 >>>>>>> 2f795dc71feda21108570c73e47d9f6b762e22a4
 
 python:
-  version: 3.7.1
+  version: 3.8
   install:
     - requirements: docs/requirements.txt
