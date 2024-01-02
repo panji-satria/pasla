@@ -5,7 +5,7 @@ Pasla is a Python framework that provides various functionalities for processing
 
 ## Extended Description
 
-Pasla is a versatile and powerful framework designed to streamline the development of deep learning and machine learning projects. With a focus on simplicity and flexibility, Pasla offers a range of features that cater to both novice and experienced users.
+pasla is a versatile and powerful framework designed to streamline the development of deep learning and machine learning projects. With a focus on simplicity and flexibility, pasla offers a range of features that cater to both novice and experienced users.
 
 ### Key Features
 
@@ -29,7 +29,7 @@ rf_model, accuracy = mt.train_random_forest_classifier(features, labels)
 mt.save_model(rf_model, "random_forest_model.pkl")
 
 ## Installation
-To install Pasla, run the following command:
+To install pasla, run the following command:
 
 ``` party w/me bash
 pip install pasla
