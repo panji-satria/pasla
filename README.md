@@ -1,4 +1,4 @@
-# Pasla
+# pasla
 
 **A powerful and flexible framework for deep learning and machine learning projects.**
 Pasla is a Python framework that provides various functionalities for processing data, building machine learning models, and tensor operations. This framework is designed to facilitate the development and implementation of data-driven solutions.
